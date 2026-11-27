@@ -11044,3 +11044,269 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* Cybersecurity theme overrides */
+:root {
+  --bs-primary: #00ff9c;
+  --bs-secondary: #3b1d5f;
+  --bs-primary-rgb: 0, 255, 156;
+  --bs-secondary-rgb: 22, 27, 34;
+  --bs-body-color-rgb: 201, 209, 217;
+  --bs-body-bg-rgb: 42, 18, 72;
+  --bs-body-color: #c9d1d9;
+  --bs-body-bg: #2a1248;
+  --bs-link-color: #00ff9c;
+  --bs-link-hover-color: #66ffc1;
+  --bs-font-monospace: "Fira Code", "Courier New", monospace;
+  --bs-font-sans-serif: "Fira Code", "Courier New", monospace;
+  --bs-body-font-family: "Fira Code", "Courier New", monospace;
+}
+
+body,
+.page-section,
+.portfolio-modal .modal-content {
+  background-color: #2a1248;
+  color: #c9d1d9;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+.text-primary,
+.text-secondary,
+.portfolio-modal .portfolio-modal-title,
+#mainNav .navbar-brand,
+#mainNav .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #00ff9c !important;
+}
+
+#mainNav,
+.footer {
+  background-color: #3b1d5f !important;
+}
+
+.navbar-toggler {
+  color: #00ff9c;
+  border-color: #00ff9c;
+}
+
+.masthead,
+.page-section.bg-primary,
+.copyright {
+  background-color: #2a1248 !important;
+}
+
+a {
+  color: #00ff9c;
+}
+
+a:hover,
+a:focus {
+  color: #66ffc1;
+}
+
+.btn-primary {
+  --bs-btn-color: #2a1248;
+  --bs-btn-bg: #00ff9c;
+  --bs-btn-border-color: #00ff9c;
+  --bs-btn-hover-color: #2a1248;
+  --bs-btn-hover-bg: #66ffc1;
+  --bs-btn-hover-border-color: #66ffc1;
+  --bs-btn-focus-shadow-rgb: 0, 255, 156;
+  --bs-btn-active-color: #2a1248;
+  --bs-btn-active-bg: #00cc7d;
+  --bs-btn-active-border-color: #00cc7d;
+  --bs-btn-disabled-color: #3b1d5f;
+  --bs-btn-disabled-bg: #00ff9c;
+  --bs-btn-disabled-border-color: #00ff9c;
+}
+
+.btn-outline-light {
+  --bs-btn-color: #00ff9c;
+  --bs-btn-border-color: #00ff9c;
+  --bs-btn-hover-color: #2a1248;
+  --bs-btn-hover-bg: #00ff9c;
+  --bs-btn-hover-border-color: #00ff9c;
+  --bs-btn-focus-shadow-rgb: 0, 255, 156;
+  --bs-btn-active-color: #2a1248;
+  --bs-btn-active-bg: #00ff9c;
+  --bs-btn-active-border-color: #00ff9c;
+  --bs-btn-disabled-color: #00ff9c;
+  --bs-btn-disabled-border-color: #00ff9c;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  background-color: rgba(0, 255, 156, 0.9);
+  color: #2a1248;
+}
+
+.divider-custom .divider-custom-line {
+  background-color: #00ff9c;
+}
+
+.divider-custom .divider-custom-icon {
+  color: #00ff9c;
+}
+
+.form-control,
+.form-control:focus {
+  background-color: #3b1d5f;
+  color: #c9d1d9;
+  border-color: #30363d;
+}
+
+.form-floating label,
+.form-floating input.form-control::placeholder,
+.form-floating textarea.form-control::placeholder {
+  color: #8b949e;
+}
+
+.portfolio-modal .btn-close {
+  color: #00ff9c;
+  filter: invert(1);
+}
+
+.masthead .masthead-avatar {
+  border: 0.25rem solid #00ff9c;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.cyber-card {
+  border: 0.125rem solid #00ff9c;
+  border-radius: 0.75rem;
+  background-color: #3b1d5f;
+  color: #c9d1d9;
+}
+
+.cyber-card i {
+  color: #00ff9c;
+}
+
+#projects .cyber-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.35rem;
+  border-color: rgba(0, 255, 156, 0.7);
+  background:
+    linear-gradient(rgba(0, 255, 156, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 156, 0.025) 1px, transparent 1px),
+    #21113b;
+  background-size: 1.25rem 1.25rem;
+  box-shadow: 0 0 1.25rem rgba(0, 255, 156, 0.12), inset 0 0 1.25rem rgba(0, 255, 156, 0.03);
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projects .cyber-card::before {
+  content: "●  ●  ●";
+  display: block;
+  margin: -1.5rem -1.5rem 1.25rem;
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid rgba(0, 255, 156, 0.45);
+  background-color: rgba(0, 255, 156, 0.08);
+  color: #00ff9c;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+}
+
+#projects .cyber-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(transparent 50%, rgba(0, 255, 156, 0.018) 50%);
+  background-size: 100% 4px;
+}
+
+#projects .cyber-card:hover {
+  transform: translateY(-0.35rem);
+  border-color: #00ff9c;
+  box-shadow: 0 0 1.75rem rgba(0, 255, 156, 0.24), inset 0 0 1.25rem rgba(0, 255, 156, 0.05);
+}
+
+#projects .cyber-card i {
+  display: block;
+  text-align: center;
+  text-shadow: 0 0 1rem rgba(0, 255, 156, 0.65);
+}
+
+#projects .cyber-card h3::before {
+  content: "> ";
+  color: #00ff9c;
+}
+
+#projects .cyber-card p {
+  color: #c9d1d9;
+  border-left: 2px solid rgba(0, 255, 156, 0.55);
+  padding-left: 0.75rem;
+  line-height: 1.75;
+}
+
+#about .row > div {
+  position: relative;
+  border: 0.125rem solid rgba(0, 255, 156, 0.7);
+  border-radius: 0.35rem;
+  padding: 3.75rem 2rem 2rem;
+  background:
+    linear-gradient(rgba(0, 255, 156, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 156, 0.03) 1px, transparent 1px),
+    #21113b;
+  background-size: 1.25rem 1.25rem;
+  box-shadow: 0 0 1.75rem rgba(0, 255, 156, 0.14);
+}
+
+#about .row > div::before {
+  content: "IDENTITY_PROFILE.EXE  [STATUS: ACTIVE]";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid rgba(0, 255, 156, 0.45);
+  background-color: rgba(0, 255, 156, 0.08);
+  color: #00ff9c;
+  font-size: 0.85rem;
+  letter-spacing: 0.08rem;
+  text-align: left;
+}
+
+#about ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#about li {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border-left: 2px solid #00ff9c;
+  background: linear-gradient(90deg, rgba(0, 255, 156, 0.09), transparent);
+  position: relative;
+}
+
+#about li::before {
+  content: "[+]";
+  position: absolute;
+  left: 0.75rem;
+  color: #00ff9c;
+  font-weight: 700;
+}
+
+#about li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .masthead .masthead-heading {
+    font-size: 2.25rem;
+  }
+
+  .masthead .masthead-avatar {
+    width: 11rem;
+  }
+
+  .btn-xl {
+    width: 100%;
+  }
+}
